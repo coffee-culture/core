@@ -3,7 +3,9 @@
 set -e
 cd "$(dirname "$0")/.."
 
-PROJECT_NAME=coffeeculture/core
+source script/env.sh
+load_project_env
+source script/cleanup.sh
 
 GIT_BRANCH=${GIT_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}
 GIT_COMMIT=${GIT_COMMIT:-$(git rev-parse HEAD)}

@@ -1,11 +1,11 @@
-FROM openjdk:14-alpine as build
+FROM adoptopenjdk/openjdk14:jdk-14_36-alpine-slim as build
 
 WORKDIR /app
 COPY . ./
 
 RUN ./gradlew build
 
-FROM openjdk:14-alpine as release
+FROM adoptopenjdk/openjdk14:jre-14_36-alpine as release
 EXPOSE 8080
 
 WORKDIR /app
