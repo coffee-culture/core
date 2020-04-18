@@ -2,6 +2,13 @@
 Validate &amp; standardize incoming updates.
 
 ## Requirements & Dependencies
+### Repo Access
+- [CoffeeCulture on GitHub](https://github.com/coffee-culture)
+- [CoffeeCulture on DockerHub](https://hub.docker.com/orgs/coffeeculture)
+
+### Dependencies
+- [jenv](https://www.jenv.be/) recommended for managing JDKs
+
 ### Environment Variables
 ```
     DOCKERHUB_USERNAME | DockerHub Username.

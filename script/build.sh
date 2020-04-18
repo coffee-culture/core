@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
-PROJECT_NAME=coffeeculture/core
+set -e
+cd "$(dirname "$0")/.."
+
+source script/env.sh
+load_project_env
+source script/cleanup.sh
 
 GIT_BRANCH=${GIT_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}
 GIT_COMMIT=${GIT_COMMIT:-$(git rev-parse HEAD)}
-
-set -e
-cd "$(dirname "$0")/.."
 
 GIT_BRANCH=${GIT_BRANCH:-$(git rev-parse --abbrev-ref HEAD)}
 GIT_COMMIT=${GIT_COMMIT:-$(git rev-parse HEAD)}
