@@ -48,6 +48,9 @@ dependencies {
 	}
 	testImplementation("io.projectreactor:reactor-test:$reactorTestSupportVersion")
 	testImplementation("org.springframework.kafka:spring-kafka-test:$springKafkaVersion")
+
+	// AssertK
+	testCompile("com.willowtreeapps.assertk:assertk-jvm:0.22")
 }
 
 tasks.withType<Test> {
